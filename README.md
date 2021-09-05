@@ -6,6 +6,9 @@
 4. [Creating database](#4-creating-database) 
 5. [Manipulating tables](#5-manipulating-tables) 
 6. [Importing data](#6-importing-data) 
+7. [Storing data](#7-storing-data)   
+7.1. [Data types](#71-data-types)
+8. [Retrieving data](#8-retrieving-data)
 
 ## 1. Useful programs
 
@@ -101,6 +104,16 @@ RENAME TABLE old_table1 TO new_table1,
              old_table3 TO new_table3;
 ```          
 
+Add a column
+```
+ALTER TABLE `databasename`.tablename ADD column_name TIME NULL;
+```
+
+Change column orders
+```
+ALTER TABLE `databasename`.tablename CHANGE column_1 column_1 TIME NULL AFTER column_2;
+```
+
 
 ## 6. Importing data
 
@@ -117,4 +130,34 @@ LINES TERMINATED BY '\n'
 
 On DBeaver, select table with right mouse button => import data.
 
+Imported data must have header row.
+This can be matched in DBeaver with field (column) names : Tables mapping => Columns.
+
+## 7. Storing data
+
+### 7.1. Data types
+
+TIME(fsp) 	A time. Format: hh:mm:ss. The supported range is from '-838:59:59' to '838:59:59'
+
+### 7.2 Updating existing row
+
+```
+UPDATE `database_name`.table_name
+SET column_1 = value_1
+WHERE column_2=value_2;
+```
+
+```
+UPDATE `database_name`.table_name
+SET column_1 = value_1, column_2 = value_2
+WHERE column_3=value_3;
+```
+
+## 8. Retrieving data
+
+```
+SELECT column_1
+FROM table_name
+WHERE column_2=value;
+```
 
