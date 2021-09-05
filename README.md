@@ -1,11 +1,11 @@
 # MySQL general
 
-1. [Useful programs](#Useful_programs) 
-2. [Linux command line ](#Linux_command_line) 
-3. [Controlling user privledges](#Controlling_user_priviledges) 
-4. [Creating database](#Creating_database) 
-4. [Manipulating tables](#Manipulating_tables) 
-6. [Importing data](#Importing_data) 
+1. [Useful programs](#1-Useful_programs) 
+2. [Linux command line ](#2-Linux_command_line) 
+3. [Controlling user privledges](#3-Controlling_user_priviledges) 
+4. [Creating database](#4-Creating_database) 
+5. [Manipulating tables](#5-Manipulating_tables) 
+6. [Importing data](#6-Importing_data) 
 
 ## 1. Useful programs
 
