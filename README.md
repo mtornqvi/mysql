@@ -11,6 +11,7 @@
 
 <a href="https://www.phpmyadmin.net/">  phpMyAdmin </a>  
 <a href="https://dbeaver.io/">  DBeaver </a>
+<a href="https://www.libreoffice.org/">  LibreOffice </a>
 
 Linux command-line tools:
 mysql
@@ -105,12 +106,15 @@ RENAME TABLE old_table1 TO new_table1,
 
 Excel:
 Export data to csv, deliminated with commas.
+Best tool for this is Libreoffice Calc, where you can choose coding and deliminators.
 
-
-USE AIKA; # change database
-LOAD DATA LOCAL INFILE "/usr/local/notes/asiakkaat.csv" INTO TABLE aika.asiakkaat
+```
+LOAD DATA LOCAL INFILE "/location/name.csv" INTO TABLE databasename.tablename
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
-(nimi)
+(field)
+```
+
+On DBeaver, select table with right mouse button => import data.
 
 
